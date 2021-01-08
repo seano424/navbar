@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=Lilita+One&family=Playfair+Display:ital,wght@0,700;1,600;1,700&family=Roboto+Mono:wght@300;400&display=swap");
+
+h1 {
+  font-family: "Playfair Display", serif;
+  font-style: italic;
+  font-weight: 700;
+}
+
+p,
+a {
+  font-family: "Roboto Mono", monospace;
+}
+
+nav {
+  background: black;
+  top: 0;
+  width: 100%;
+  transition: all 1.5s;
+  position: relative;
+  z-index: 1;
+}
+.site-wrap {
+  max-width: 700px;
+  margin: 70px auto;
+  background: white;
+  padding: 40px;
+  text-align: justify;
+  box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.05);
+  transform: scale(0.98);
+  transition: transform 1.5s;
+}
+
+.fixed-nav .site-wrap {
+  transform: scale(1);
+  transition: all 1.5s;
+}
+
+.fixed-nav nav {
+  position: fixed;
+  box-shadow: 0 5px rgba(0, 0, 0, 0.05);
+  transition: all 1.5s;
+}
+
+nav ul {
+  height: 60px;
+  /* max-width: 60vw; */
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+nav li {
+  display: flex;
+  align-items: center;
+}
+
+li.logo {
+  max-width: 0;
+  overflow: hidden;
+  background: white;
+  transition: all 0.5s;
+  font-weight: 600;
+  font-size: 30px;
+  position: absolute;
+  left: 0;
+  height: inherit;
+}
+
+.fixed-nav li.logo {
+  max-width: 500px;
+}
+
+li.logo a {
+  color: black;
+  font-family: "Playfair Display", serif;
+  font-style: italic;
+}
+
+nav a {
+  text-decoration: none;
+  padding: 20px;
+  display: inline-block;
+  color: white;
+  transition: all 0.2s;
+  text-transform: uppercase;
+}
+
+nav a:hover {
+  color: lightgray;
+}
